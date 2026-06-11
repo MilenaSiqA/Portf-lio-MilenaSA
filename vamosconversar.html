@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Milena S. Araujo | Contato </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Milena_Siqueira_Araujo</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobremim.html">Sobre Mim</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                 <li><a href="vamosconversar.html">Vamos conversar! ✉</a></li>
+            </ul>
+            <button id="btn-tema" class="btn-tema" title="Alternar tema">⏾</button>
+            
+        </nav>
+    </header>
+
+    <main class="container-conteudo">
+        <article class="paper-block">
+            <h1>[Vamos conversar!!! ✉]</h1>
+            <p class="intro-text">Tem alguma dúvida, sugestão de projeto  ou oportunidade de conexão/estágio? Me manda uma mensagem por aqui! 📬</p>
+            
+            <div class="bloco-info">
+                <h2>// Onde me encontrar</h2>
+                <p>Estou sempre aberta a conversar sobre tecnologia, desenvolvimento de software e inovação. Responderei o mais rápido possível!</p>
+            </div>
+            <ul class="styled-ul" style="list-style-type: '📂 '; margin-top: 15px; line-height: 2;">
+                <li>
+                    <strong>Email Educacional:</strong> 
+                    <a href="mailto:msa4@cesar.school" class="link-pasta">msa4@cesar.school</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/milenasiqueiraaraujo/" target="_blank" class="link-pasta">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/MilenaSiqA" target="_blank" class="link-pasta">GitHub</a>
+                </li>
+            </ul>
+
+            <hr class="section-divider">
+
+            <div class="bloco-info">
+                <h2>// Enviar Mensagem</h2>
+                
+                <form id="formulario-contato" method="POST" action="https://formspree.io/f/xdavdjep" class="formulario-retro">
+                    <div class="campo-grupo">
+                        <label for="nome">-> Seu nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required >
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="email">-> Seu e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@email.com" required >
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="assunto">-> Assunto:</label>
+                        <select id="assunto" name="assunto">
+                            <option value="">Escolha um assunto...</option>
+                            <option value="projeto">Colaboração em Projeto</option>
+                            <option value="duvida">Dúvida sobre meu trabalho</option>
+                            <option value="estagio">Oportunidade de estágio</option>
+                            <option value="outro">Outro assunto</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-grupo">
+                        <label for="mensagem">-> Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar-retro">Enviar mensagem!</button>
+                    <p class="aviso-formulario" id="aviso-formulario"></p>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p> 2026 • Portfólio Milena Siqueira Araujo • CC/B </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
